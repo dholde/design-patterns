@@ -4,6 +4,7 @@ import com.designpatterns.abstractfactory.AbstractFactoryPatternRunner;
 import com.designpatterns.builder.BuilderPatternRunner;
 import com.designpatterns.factory.FactoryPatternRunner;
 import com.designpatterns.prototype.PrototypePatternRunner;
+import com.designpatterns.singleton.simple.SingletonPatternRunner;
 
 public class Main {
 
@@ -12,8 +13,15 @@ public class Main {
 		//runFactoryPattern();
 		//runAbstractFactoryPattern();
 		//runBuilderPattern();
-		runPrototypePattern();
+		//runPrototypePattern();
+		runSingletonPattern();
 
+	}
+
+	private static void runSingletonPattern() {
+		var runner = new SingletonPatternRunner();
+		runner.runPattern();
+		
 	}
 
 	private static void runPrototypePattern() {
