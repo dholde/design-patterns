@@ -1,10 +1,10 @@
 package com.designpatterns;
 
-import com.designpatterns.abstractfactory.AbstractFactoryPatternRunner;
-import com.designpatterns.builder.BuilderPatternRunner;
-import com.designpatterns.factory.FactoryPatternRunner;
-import com.designpatterns.prototype.PrototypePatternRunner;
-import com.designpatterns.singleton.simple.SingletonPatternRunner;
+import com.designpatterns.creational.abstractfactory.AbstractFactoryPatternRunner;
+import com.designpatterns.creational.builder.BuilderPatternRunner;
+import com.designpatterns.creational.factory.FactoryPatternRunner;
+import com.designpatterns.creational.prototype.PrototypePatternRunner;
+import com.designpatterns.creational.singleton.simple.SingletonPatternRunner;
 
 public class Main {
 
