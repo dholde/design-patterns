@@ -3,15 +3,22 @@ package com.designpatterns;
 import com.designpatterns.abstractfactory.AbstractFactoryPatternRunner;
 import com.designpatterns.builder.BuilderPatternRunner;
 import com.designpatterns.factory.FactoryPatternRunner;
+import com.designpatterns.prototype.PrototypePatternRunner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		// runFactoryPattern();
+		//runFactoryPattern();
 		//runAbstractFactoryPattern();
-		runBuilderPattern();
+		//runBuilderPattern();
+		runPrototypePattern();
 
+	}
+
+	private static void runPrototypePattern() {
+		var runner = new PrototypePatternRunner();
+		runner.runPattern();
 	}
 
 	private static void runFactoryPattern() {
