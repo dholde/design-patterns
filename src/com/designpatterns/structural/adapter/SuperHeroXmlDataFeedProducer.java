@@ -18,6 +18,10 @@ public class SuperHeroXmlDataFeedProducer {
 		}
 		return heroAsString;
 	}
+	
+	public String getSuperHeroFeed() {
+		return this.getSuperHeroDataAsXmlString();
+	}
 
 	public SuperHero getSuperHero() {
 		return superHero;

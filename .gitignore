@@ -250,3 +250,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/osx,java,windows,eclipse,intellij,visualstudiocode
+/target/
