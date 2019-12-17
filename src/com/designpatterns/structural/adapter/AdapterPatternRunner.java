@@ -10,12 +10,17 @@ public class AdapterPatternRunner implements PatternExampleRunner {
 		SuperHero superMan = new SuperHero();
 		superMan.setName("Super Man");
 		superMan.setRealName("Klark Kent");
+		superMan.setSuperPower("Heat Vision");
 		superMan.setWeakness("Krytonite");
 		superMan.setSuperHeroUniverse("DC");
 		
-		SuperHeroXmlDataFeedProducer xmlFeedProducer = new SuperHeroXmlDataFeedProducer();
-		xmlFeedProducer.setSuperHero(superMan);
-		System.out.println(xmlFeedProducer.getSuperHeroDataAsXmlString());
+		SuperHeroXmlDataFeedProducer superHeroXmlFeedProducer = new SuperHeroXmlDataFeedProducer(superMan);
+		System.out.println(superHeroXmlFeedProducer.getSuperHeroDataAsXmlString());
+		
+		SuperHeroXmlToJsonFeedAdapter superHeroXmlToJsonFeedAdapter = new SuperHeroXmlToJsonFeedAdapter(superHeroXmlFeedProducer);
+		System.out.println(superHeroXmlToJsonFeedAdapter.getSuperHeroDataAsJsonString());
+		
+		
 		
 	}
 
